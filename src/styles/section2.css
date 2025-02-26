@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    /* padding: 40px; */
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
 }
@@ -20,11 +20,11 @@
 }
 
 .title {
-    text-align: left;
+    text-align: center;
     width: 100%;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .text {
@@ -33,7 +33,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 .zdjęcie1, .zdjęcie2 {
@@ -50,20 +50,20 @@
 @media (max-width: 768px) {
     .container-section2 {
         flex-direction: column;  /* Zmiana układu na pionowy */
-        align-items: center;  
+        align-items: left;  
         padding: 0;
     }
 
     .title {
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 1.8rem;
     }
 
     .text {
         width: 90%;
-        margin: 20px auto;  /* Wyśrodkowanie i poprawa marginesu */
-        text-align: center;
+        margin: 10px auto;  /* Wyśrodkowanie i poprawa marginesu */
+        text-align: left;
         font-size: 1rem;
     }
 

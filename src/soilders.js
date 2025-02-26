@@ -1,25 +1,26 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
 import Toolbar from './components/toolbar';
+import "./styles/soilders-styles.css";
+import List from "./assets2/soilders-list.json";
 
 const Soilders = () => {
   return (
-    <div className="App">
+    <div>
       <div className="toolbar">
-        <Toolbar/>
+        <Toolbar />
       </div>
-      <div  className="section1">
-      <Collapsible trigger="Start here">
-          <p>
-              This is the collapsible content. It can be any element or React
-              component you like.
-          </p>
-          <p>
-              It can even be another Collapsible component. Check out the next
-              section!
-          </p>
-      </Collapsible>
-        </div>
+      <div id="core" className="container-soilders">
+        {Object.entries(List).map(([letter, soilders]) => (
+          <Collapsible key={letter} trigger={letter}>
+            {soilders.map(soilder => (
+              <Collapsible key={soilder.name} trigger={soilder.name}>
+                {soilder.description}
+              </Collapsible>
+            ))}
+          </Collapsible>
+        ))}
+      </div>
     </div>
   );
 };

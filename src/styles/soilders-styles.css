@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: rgb(72, 62, 53);
+    background-color: #ffffff;
+}
+
+/* Kontener dla strony żołnierzy */
+.container-soilders {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrowanie */
+    padding: 40px;
+    /* border: 3px solid rgb(72, 62, 53);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Nagłówek */
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Stylowanie elementów Collapsible */
+.Collapsible {
+    border-bottom: 2px solid rgb(72, 62, 53);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+/* Stylowanie przycisków Collapsible */
+.Collapsible__trigger {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(72, 62, 53);
+    color: white;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.Collapsible__trigger:hover {
+    background-color: rgb(100, 85, 73);
+}
+
+/* Styl dla treści Collapsible */
+.Collapsible__contentInner {
+    padding: 2%;
+    text-align: justify;
+    margin: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fafafa;
+    border-left: 4px solid rgb(72, 62, 53);
+}
+
+/* Dodatkowy odstęp między elementami */
+p {
+    margin-bottom: 10px;
+}
+
+/* Responsywność dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    .container-soilders {
+        padding: 20px;
+    }
+
+    .Collapsible__trigger {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .Collapsible__contentInner {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .container-soilders {
+        padding: 0px;
+        padding-top: 5%;
+    }
+}

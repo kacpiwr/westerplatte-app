@@ -6,27 +6,26 @@
     background-color: rgb(72, 62, 53);
     color: #ffffff;
     display: flex;
-    flex-wrap: wrap; /* Umożliwia zawijanie elementów */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Odstępy między filmami */
+    gap: 20px;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     padding: 20px;
 }
 
 .video {
-    width: 32%; /* Trzy elementy w rzędzie */
-    margin: 1%;
+    width: calc(33.333% - 20px); /* Trzy elementy w rzędzie, uwzględniając odstępy */
     max-width: 400px;
-    aspect-ratio: 16 / 9; /* Zapewnia proporcje wideo */
     border-radius: 20px;
-    /* overflow:auto; */
-    position: relative; /* Aby uniknąć problemów z absolutnym pozycjonowaniem */
+    overflow: hidden; /* Zapobiega wychodzeniu zawartości */
+    position: relative;
 }
 
 .video .react-player {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9; /* Zachowanie proporcji */
 }
 
 /* 🔹 Układ dla urządzeń mobilnych */
@@ -34,10 +33,11 @@
     .video-container {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 5%;
     }
 
     .video {
-        width: 100%; /* Filmy zajmują pełną szerokość ekranu */
+        width: 100%;
         max-width: 100%;
     }
 }
