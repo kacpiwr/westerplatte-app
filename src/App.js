@@ -1,29 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import  Toolbar from './components/toolbar.js'
-import  Section1 from './components/section1.js'
-import  Section2 from './components/section2.js'
-import  Section3 from './components/section3.js'
-import  VideoGallery from './components/videoGallery.js'
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./home.js";
+import Soilders from "./soilders";
+import "./styles/App.css"
 function App() {
   return (
-    <div className="App">
-      <div className="toolbar">
-        <Toolbar/>
-      </div>
-      <div  className="section1">
-        <Section1/>
-      </div>
-      <div  className="section2">
-        <Section2/>
-      </div>
-      <div  className="section2">
-        <Section3/>
-      </div>
-      <VideoGallery/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/soilders" element={<Soilders />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-.container {
+.container-section2 {
     width: 100%;
     color: rgb(72, 62, 53);
     max-width: 100vw;
@@ -12,13 +12,13 @@
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
 }
-.gap{
 
+.gap {
     width: 100%;
-    height: 3px;
-
+    height: 5px;
     background-color: rgb(72, 62, 53);
 }
+
 .title {
     text-align: left;
     width: 100%;
@@ -36,10 +36,45 @@
     margin-right: 20px;
 }
 
-.zdjęcie {
+.zdjęcie1, .zdjęcie2 {
     width: 40%;
     height: auto;
-    /* object-fit: cover; */
-    /* margin-left: 20px; */
+    max-width: 100%;
     margin-right: 20px;
+}
+
+.zdjęcie2 {
+    display: none; /* Ukrycie drugiego obrazka na dużych ekranach */
+}
+
+@media (max-width: 768px) {
+    .container-section2 {
+        flex-direction: column;  /* Zmiana układu na pionowy */
+        align-items: center;  
+        padding: 0;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .text {
+        width: 90%;
+        margin: 20px auto;  /* Wyśrodkowanie i poprawa marginesu */
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .zdjęcie1 {
+        display: none; /* Ukrycie pierwszego obrazka na urządzeniach mobilnych */
+    }
+
+    .zdjęcie2 {
+        display: block; /* Pokazanie drugiego obrazka */
+        width: 100%;  /* Obraz zajmuje całą szerokość */
+        height: auto;
+        margin: 0;
+    }
 }

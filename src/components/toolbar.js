@@ -3,6 +3,8 @@ import { Menu, X } from "lucide-react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import "../styles/toolbar_style.css";
 
+import { Link } from "react-router-dom";
+
 export default function Toolbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,8 +19,8 @@ export default function Toolbar() {
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content className="dropdown-content">
-          <DropdownMenu.Item className="dropdown-item"> <a href="../soilders.js">Zolnierze</a></DropdownMenu.Item>
-          <DropdownMenu.Item className="dropdown-item">Opcja 2</DropdownMenu.Item>
+          <DropdownMenu.Item className="dropdown-item"> <Link to="/">Dom</Link></DropdownMenu.Item>
+          <DropdownMenu.Item className="dropdown-item"><Link to="/soilders">Zolnierz</Link></DropdownMenu.Item>
           <DropdownMenu.Item className="dropdown-item">Opcja 3</DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>

@@ -47,7 +47,6 @@
 /* 🔹 Układ dla urządzeń mobilnych */
 @media (max-width: 768px) {
     .container {
-        background-color: rgb(78, 46, 19);
         flex-direction: column;  /* Zmiana układu na pionowy */
         align-items: center;  
         padding: 20px;

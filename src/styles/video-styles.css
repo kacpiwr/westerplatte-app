@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.video-container {
+    width: 100%;
+    max-width: 100vw;
+    background-color: rgb(72, 62, 53);
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap; /* Umożliwia zawijanie elementów */
+    justify-content: center;
+    gap: 20px; /* Odstępy między filmami */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.video {
+    width: 32%; /* Trzy elementy w rzędzie */
+    margin: 1%;
+    max-width: 400px;
+    aspect-ratio: 16 / 9; /* Zapewnia proporcje wideo */
+    border-radius: 20px;
+    /* overflow:auto; */
+    position: relative; /* Aby uniknąć problemów z absolutnym pozycjonowaniem */
+}
+
+.video .react-player {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* 🔹 Układ dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        width: 100%; /* Filmy zajmują pełną szerokość ekranu */
+        max-width: 100%;
+    }
+}
