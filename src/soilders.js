@@ -15,7 +15,9 @@ const Soilders = () => {
           <Collapsible key={letter} trigger={letter}>
             {soilders.map(soilder => (
               <Collapsible key={soilder.name} trigger={soilder.name}>
-                {soilder.description}
+                {soilder.description.split("\n").map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
               </Collapsible>
             ))}
           </Collapsible>
