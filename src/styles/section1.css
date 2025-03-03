@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 40px; */
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -28,6 +27,14 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
+.title-mobile {
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: none;
+}
 
 .text {
     width: 30%;
@@ -41,28 +48,34 @@
 .zdjęcie {
     width: 40%;
     height: auto;
-    margin-right: 20px;
 }
 
 /* 🔹 Układ dla urządzeń mobilnych */
 @media (max-width: 768px) {
     .container {
+        justify-content: center;
         flex-direction: column;  /* Zmiana układu na pionowy */
-        align-items: left;  
-        padding: 20px;
-        
+        align-items: center;  
+        padding: 0;
+        margin: 0;
     }
-
-    .title {
-        width: 100%;
-        text-align: left;
-        font-size: 1.8rem;
+    .title  {
+        display: none;
     }
+    .title-mobile {
+        width: 80%;
+        margin-top: 20px;
+        display: block;
+        display: flex;
+        justify-content: center; /* Dodatkowe centrowanie tekstu */
+    }
+    
 
     .text {
         width: 100%;
         margin-right: 0;
-        text-align: left;
+        margin-left: 0;
+        text-align: center;
         font-size: 1rem;
         margin-bottom: 20px;  /* Odstęp od obrazka */
     }

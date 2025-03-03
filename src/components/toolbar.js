@@ -21,13 +21,16 @@ export default function Toolbar() {
         <DropdownMenu.Portal>
           <DropdownMenu.Content className="dropdown-content">
             <DropdownMenu.Item className="dropdown-item">
-              <Link to="/">Dom</Link>
+              <Link to="/">Strona Główna</Link>
             </DropdownMenu.Item>
             <DropdownMenu.Item className="dropdown-item">
-              <Link to="/soilders">Żołnierz</Link>
+              <Link to="/soilders">Historie Żołnierzy</Link>
             </DropdownMenu.Item>
             <DropdownMenu.Item className="dropdown-item">
-              <Link to="/stories">Historia</Link>
+              <Link to="/stories">Artykuły o Westerplatte</Link>
+            </DropdownMenu.Item>
+            <DropdownMenu.Item className="dropdown-item">
+              <Link to="/films">Filmy</Link>
             </DropdownMenu.Item>
           </DropdownMenu.Content>
         </DropdownMenu.Portal>

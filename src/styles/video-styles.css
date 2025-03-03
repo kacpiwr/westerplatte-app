@@ -11,8 +11,8 @@ body {
 .video-container {
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(72, 62, 53);
-    color: #ffffff;
+    color: rgb(72, 62, 53);
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

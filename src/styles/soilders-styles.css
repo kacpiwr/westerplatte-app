@@ -16,15 +16,15 @@ body {
 
 /* Kontener dla strony żołnierzy */
 .container-soilders {
+    text-align: center;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; /* Centrowanie */
-    padding: 40px;
     /* border: 3px solid rgb(72, 62, 53);
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
 }
-
 /* Nagłówek */
 .title {
     font-size: 1.8rem;
@@ -71,8 +71,23 @@ body {
 }
 
 /* Dodatkowy odstęp między elementami */
-p {
-    margin-bottom: 10px;
+.textSoilder p {
+    font-weight: 800;
+    margin: 10px;
+    font-size: large;
+}
+.textSoilder{
+    padding: 2%;
+    margin-bottom: 2%;
+    color: rgb(72, 62, 53);
+    background-color: white;
+}
+.zdjecie{
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
 }
 
 /* Responsywność dla urządzeń mobilnych */
@@ -94,5 +109,13 @@ p {
     .container-soilders {
         padding: 0px;
         padding-top: 5%;
+    }
+
+    .zdjecie{
+        width: 90%;
+        margin-left: 05%;
+        margin-right: 5%;
+        margin-top: 0%;
+        margin-bottom: 3%;
     }
 }

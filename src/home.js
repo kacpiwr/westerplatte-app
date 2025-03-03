@@ -47,15 +47,6 @@ function Home() {
         <Section3 />
       </motion.div>
 
-      <motion.div
-        className="video-gallery"
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.6 }}
-      >
-        <VideoGallery />
-      </motion.div>
     </div>
   );
 }

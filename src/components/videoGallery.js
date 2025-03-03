@@ -23,31 +23,30 @@ const YouTubeVideo = ({ videoId }) => {
 const ReactVideoGallery = () => {
   return (
     <>
-      <div className="gap"></div>
       <div className="video-container">
         <div className="video">
           {/* Pass the desired YouTube video ID */}
-          <YouTubeVideo videoId="dQw4w9WgXcQ" />
+          <YouTubeVideo videoId="99Qn0nfdIec" />
         </div>
         <div className="video">
           {/* Pass the desired YouTube video ID */}
-          <YouTubeVideo videoId="dQw4w9WgXcQ" />
+          <YouTubeVideo videoId="kAlon-hQ2tw" />
         </div>
         <div className="video">
           {/* Pass the desired YouTube video ID */}
-          <YouTubeVideo videoId="dQw4w9WgXcQ" />
+          <YouTubeVideo videoId="J9iG2JBYqcQ" />
         </div>
         <div className="video">
           {/* Pass the desired YouTube video ID */}
-          <YouTubeVideo videoId="dQw4w9WgXcQ" />
+          <YouTubeVideo videoId="ORqBiToHllQ" />
         </div>
         <div className="video">
           {/* Pass the desired YouTube video ID */}
-          <YouTubeVideo videoId="dQw4w9WgXcQ" />
+          <YouTubeVideo videoId="vVKVW2rH9G0" />
         </div>
         <div className="video">
           {/* Pass the desired YouTube video ID */}
-          <YouTubeVideo videoId="dQw4w9WgXcQ" />
+          <YouTubeVideo videoId="YFlNDcXwW6w" />
         </div>
 
       </div>

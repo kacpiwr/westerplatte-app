@@ -11,6 +11,10 @@ const Soilders = () => {
         <Toolbar />
       </div>
       <div id="core" className="container-soilders">
+        <img className="zdjecie" alt='zdjecie' src='/assets/westerplatte_zolnieze.jpg'></img>
+        <div className='textSoilder'>
+          <p>Poniżej znajdują się życiorysy żołnierzy walczących na Westerplatte</p>
+        </div>
         {Object.entries(List).map(([letter, soilders]) => (
           <Collapsible key={letter} trigger={letter}>
             {soilders.map(soilder => (

@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 40px; */
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
 }
@@ -62,7 +61,7 @@
 
     .text {
         width: 90%;
-        margin: 10px auto;  /* Wyśrodkowanie i poprawa marginesu */
+        margin: 10px auto; 
         text-align: left;
         font-size: 1rem;
     }
