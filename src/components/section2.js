@@ -9,7 +9,7 @@ export default function Section1() {
   return (
     <><div className="gap"></div><>
     <div className="container-section2">
-      <img alt="zdecie" className="zdjęcie1" src="/assets/westerplatte1.jpg" />
+      <img alt="zdecie" className="zdjęcie1" src="/assets/schleswig_holstein.jpg" />
       <h1 className="title-mobile">Historia obrony Westerplatte</h1>
       <div className="text">
           <h1 className="title">Historia obrony Westerplatte</h1>
@@ -18,7 +18,7 @@ export default function Section1() {
               Przedstawiamy zarys historyczny bohaterskiej obrony Westerplatte, a także dalsze losy żołnierzy, którzy wzięli w niej udział. Na stronie znajdą Państwo opracowania poświęcone tym wydarzeniom, oparte na wiarygodnych źródłach i relacjach.
           </p>
       </div>
-      <img alt="zdecie" className="zdjęcie2" src="/assets/westerplatte1.jpg" />
+      <img alt="zdecie" className="zdjęcie2" src="/assets/schleswig_holstein.jpg" />
       </div></></>
 
   

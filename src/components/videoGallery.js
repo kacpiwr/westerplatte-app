@@ -1,8 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "../styles/video-styles.css";
-import img1 from "../assets2/westerplatte1.jpg";
-import video1 from "../assets2/video.mp4";
 import YouTube from "react-youtube";
 
 // Functional Component to Render a YouTube Video

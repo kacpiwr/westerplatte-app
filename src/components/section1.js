@@ -13,11 +13,11 @@ export default function Section1() {
           <div className="text">
                 <h1 className="title">Witamy w serwisie Westerplatte</h1>
                 <p>
-                    Witamy w serwisie poświęconym Wojskowej Składnicy Tranzytowej na Westerplatte. Nasza strona ma na celu przybliżenie historii tego wyjątkowego miejsca oraz jego roli w wydarzeniach 1939 roku.
+                    Witamy w serwisie poświęconym Wojskowej Składnicy Tranzytowej na Westerplatte. Nasza strona ma na celu przybliżenie historii tego wyjątkowego miejsca oraz jego roli w wydarzeniach września 1939 roku, a także przedstawienie sylwetki obrońców.
                 </p>
 
           </div>
-          <img alt="zdecie" className="zdjęcie" src="/assets/westerplatte_zolnierze_pomnik.jpg" />
+          <img alt="zdjecie" className="zdjęcie" src="/assets/pic/przed3.jpg" />
       </div></>
 
   

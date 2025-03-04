@@ -17,7 +17,7 @@ export default function Section1() {
                     Większość prezentowanych materiałów została zgromadzona przez Stanisławę Górnikiewicz-Kurowską, znawczynię i popularyzatorkę wiedzy o WST Westerplatte. Udostępniamy również filmy oraz wywiady z żołnierzami, którzy walczyli na Westerplatte.
                 </p>
           </div>
-          <img alt="zdecie" className="zdjęcie" src="/assets/westerplatte2.jpg" />
+          <img alt="zdecie" className="zdjęcie" src="/assets/westerplatte_zolnierze_pomnik.jpg" />
       </div></></>
 
   
