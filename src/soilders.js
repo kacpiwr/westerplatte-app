@@ -11,7 +11,7 @@ const Soilders = () => {
         <Toolbar />
       </div>
       <div id="core" className="container-soilders">
-        <img className="zdjecie" alt='zdjecie' src='/assets/westerplatte_zolnieze.jpg'></img>
+        <img className="zdjecie" alt='zdjecie' src='/assets/zaloga1.jpg'></img>
         <div className='textSoilder'>
           <p>Poniżej znajdują się życiorysy żołnierzy walczących na Westerplatte</p>
         </div>
@@ -19,7 +19,7 @@ const Soilders = () => {
           <Collapsible key={letter} trigger={letter}>
             {soilders.map(soilder => (
               <Collapsible key={soilder.name} trigger={soilder.name}>
-                {soilder.description.split("\n").map((paragraph, index) => (
+                {soilder.description.split("\n\n").map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               </Collapsible>

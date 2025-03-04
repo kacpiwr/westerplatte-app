@@ -24,7 +24,7 @@ export default function Toolbar() {
               <Link to="/">Strona Główna</Link>
             </DropdownMenu.Item>
             <DropdownMenu.Item className="dropdown-item">
-              <Link to="/soilders">Historie Żołnierzy</Link>
+              <Link to="/soilders">Żołnierze</Link>
             </DropdownMenu.Item>
             <DropdownMenu.Item className="dropdown-item">
               <Link to="/stories">Artykuły o Westerplatte</Link>

@@ -89,6 +89,9 @@ body {
     margin-right: 25%;
     margin-top: 1%;
 }
+.container-soilders p {
+    margin-bottom: 10px;
+}
 
 /* Responsywność dla urządzeń mobilnych */
 @media (max-width: 768px) {

@@ -12,13 +12,13 @@ const Stories = () => {
         <Toolbar />
       </div>
       <div id="core" className="container-soilders">
-      <img className="zdjecie" alt='zdjecie' src='/assets/westerplatte_zolnierze_pomnik.jpg'></img>
+      <img className="zdjecie" alt='zdjecie' src='/assets/historie1.jpg'></img>
         <div className='textSoilder'>
           <p>Poniżej znajdują się różne historie z okresu Westerplatte</p>
         </div>
       {List.sections.map((storie, index) => (
         <Collapsible key={index} trigger={storie.title}>
-            {storie.desc.split("\n").map((history) =>(
+            {storie.desc.split("\n\n").map((history) =>(
                 <ReactMarkDown>{history}</ReactMarkDown>
             ))}
         </Collapsible>
